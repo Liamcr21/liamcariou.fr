@@ -70,6 +70,7 @@ $headers = 'From:'.$mail . "\r\n" .
               <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
               <li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
               <li class="nav-item active"><a href="contact.php" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="login.php" class="nav-link">Admin</a></li>
             </ul>
           </div>
         </div>
@@ -114,7 +115,7 @@ $headers = 'From:'.$mail . "\r\n" .
         </div>
       </div>
       <div class="contdroite">
-      <h1 class="h1portfolio">Contactez moi !</h1>
+        <div class="contacth1">Contactez moi !</div>
 
 
 
@@ -130,17 +131,19 @@ if ($confirme=="oui"):
  
 <label for="fname">Prénom :</label>
 <input type="text" id="fname" class="inputcontact" name="firstname" placeholder="Prénom..">
+<div class = "rouge cache" id="name"><strong> Veuillez rentrer votre Prénom </strong></div>
   <label for="lname">Nom :</label>
  <input type="text" id="lname" class="inputcontact" name="lastname" placeholder="Nom..">
+ <div class = "rouge cache" id="llname"><strong> Veuillez rentrer votre Nom </strong></div>
      <label for="email">Votre Email :</label>
     <input type="text" id="email" class="inputcontact" name="email" placeholder="Email..">
+    <div class = "rouge cache" id="lemail"><strong> Veuillez rentrer votre Email</strong></div>
  <label for="sujet">Sujet :</label>
-
  <select id="sujet" name="sujet">
     <label for="fname">Sujet :</label>
    <option value="demande">Questions</option>
-   <option value="Alternance">Alternance</option>
-      <option value="autres">Autres</option>
+   <option value="retour">Stage/Alternance</option>
+      <option value="questions">Autres</option>
   </select>
   <br><br><br>
     <label for="message">Message :</label>
