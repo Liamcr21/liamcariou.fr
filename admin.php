@@ -9,7 +9,7 @@ else
     header("Location: login.php");
 }
 ?>
-
+<link rel="stylesheet" href="style/admin.css">
 <h1 class=h1>Dashboard Admin</h1>
 <table>
     <tr>
