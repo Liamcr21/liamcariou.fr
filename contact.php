@@ -111,7 +111,7 @@ if ($confirme=="oui"):
    <option value="retour">Stage/Alternance</option>
       <option value="questions">Autres</option>
   </select>
-
+<br>
     <label for="message">Message :</label>
  <textarea id="message" class="inputcontact" name="message" placeholder="Votre message..." style="height:200px"></textarea>
   <input type="submit" value="Envoyer" class="btncontact">
