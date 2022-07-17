@@ -1,5 +1,17 @@
-<title>Dashboard Admin</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/admin.css">
+</head>
+<body>
+    
+
 <?php
+
 session_start();
 if(isset($_SESSION['username'])){
     $username = $_SESSION['username'];
@@ -9,8 +21,8 @@ else
     header("Location: login.php");
 }
 ?>
-<link rel="stylesheet" href="style/admin.css">
-<h1 class=h1>Dashboard Admin</h1>
+
+<h1 >Dashboard Admin</h1>
 <table>
     <tr>
         <td scope="row"><strong>Prénom</strong></td>
@@ -48,3 +60,6 @@ try {
 <div id=logoutbutton>
     <a href="logout.php" id="logout">Se déconnecter <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
 </div>
+
+</body>
+</html>

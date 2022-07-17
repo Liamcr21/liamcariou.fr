@@ -1,9 +1,9 @@
 
 body {
-    background-color: #F1F1F1;
+    background-color: #343a40;
     margin: 0;
     box-sizing: border-box;
-    color: #514B64;
+    color: white;
     min-height: 100vh;
   }
   
@@ -723,3 +723,30 @@ html::-webkit-scrollbar-thumb{
   text-align: center;
 }
 
+
+/* blog */ 
+
+.blog{
+  display: block;
+  margin: auto;
+  margin-top: 2%;
+  width: 60%;
+  height:240px;
+  border: solid 5px white;
+}
+
+.containerblog{
+  display: flex;
+  padding: 20px;
+}
+
+.titreblog{
+  margin-top: 6%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.textblog{
+  margin-top: 7%;
+  font-size: large;
+}

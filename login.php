@@ -1,4 +1,13 @@
-<title>Connexion</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin - liamcariou.fr - liam cariou</title>
+    <link rel="stylesheet" href="style/admin.css">
+</head>
+<body>
 
 <?php 
 $error = "";
@@ -36,16 +45,16 @@ if(isset($_POST['submit'])){
         <div class="login-box">
             <h1>Connexion</h1>
             <div class="textbox">
+            <label>Identifiant :</label>
                 <input type="text" placeholder="Nom d'utilisateur" name="username" value="" autocomplete="off">
-            </div>
-  
-            <div class="textbox">
+                <label>Mot de passe : </label>
                 <input type="password" placeholder="Mot de passe" name="password" value="" autocomplete="off">
             </div>
   
             <input class="button" type="submit" name="submit" value="Se connecter">
             <p class="errormessage"><?php echo $error?></p>
-            <a href=index.html id="back">Revenir sur le site</a>
+            <a href=index.html id="back" class="backlogin">Revenir sur le site</a>
         </div>
     </form>
 </body>
+</html>
